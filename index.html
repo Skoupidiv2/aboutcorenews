@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoreNews/About</title>
+    <style>
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: #2c2c2c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgb(22,22,22);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-button {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-corner {
+            background-color: #2c2c2c;
+        }
+        body::-webkit-scrollbar:horizontal {
+            display: none;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: #2c2c2c;
+            font-family: sans-serif;
+            margin: 0;
+            color: white;
+            user-select: none;
+            overflow-y: scroll;
+        }
+        #headingDiv {
+            background-color: rgb(31, 31, 31);
+            height: 70px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: fixed;
+            left: 0;
+            top: 0;
+            transition: transform 0.05s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            z-index: 10;
+        }
+        #homebtn, #aboutbtn, #signupbtn, #loginbtn {
+            margin: 0;
+            height: 70px;
+            width: 100px;
+            font-weight: normal;
+            font-size: large;
+            background-color: transparent;
+            border: none;
+            color: white;
+            transition: 0.2s;
+        }
+        #introduction {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            margin-top: 70px;
+            position: relative;
+            box-sizing: border-box;
+        }
+        #title {
+            color: white;
+            margin: 0;
+        }
+        #aboutframe {
+            padding: 20px;
+            text-align: center;
+        }
+        #aboutp {
+            font-weight: 600;
+            font-size: 16px;
+            color: #2c2c2c;
+        }
+        h3 {
+            text-align: center;
+        }
+        @media (prefers-color-schemes: dark){
+            body {
+                background-color: #2c2c2c;
+                color: white;
+            }
+            #headingDiv {
+                background-color: rgb(31, 31, 31);
+            }
+            #homebtn, #aboutbtn, #signupbtn, #loginbtn {
+                color: white;
+                background-color: transparent;
+            }
+            #homebtn:hover, #aboutbtn:hover, #signupbtn:hover, #loginbtn:hover {
+                background-color: rgb(27, 27, 27);
+            }
+            #title {
+                color: rgb(247, 119, 0);
+            }
+            #colored {
+                color: rgb(247, 119, 0);
+            }
+            ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: #2c2c2c;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgb(22,22,22);
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-button {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-corner {
+            background-color: transparent;
+        }
+        body::-webkit-scrollbar:horizontal {
+            display: none;
+        }
+        }
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: rgb(212, 212, 212);
+                color: black;
+            }
+            #headingDiv {
+                background-color: #aaaaaa;
+            }
+            #homebtn, #aboutbtn, #signupbtn, #loginbtn {
+                color: white;
+                background-color: transparent;
+            }
+            #homebtn:hover, #aboutbtn:hover, #signupbtn:hover, #loginbtn:hover {
+                background-color: rgb(190, 190, 190);
+            }
+            #title {
+                color: black;
+            }
+            #colored {
+                color: black;
+            }
+            ::-webkit-scrollbar-track {
+                background-color: rgb(212, 212, 212);
+            }
+            ::-webkit-scrollbar-thumb {
+                background: rgb(190, 190, 190);
+            }
+            ::-webkit-scrollbar-corner {
+                background-color: rgb(212, 212, 212);
+            }
+            #aboutp{
+                color: #2c2c2c;
+            }
+            #colored{
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="headingDiv">
+        <button id="homebtn">Home</button>
+        <button id="aboutbtn">About</button>
+        <button id="signupbtn">Sign Up</button>
+        <button id="loginbtn">Log in</button>
+    </div>
+    <div id="introduction">
+        <h1 id="title">About Core News</h1>
+    </div>
+    <div id="aboutframe">
+        <h3 id="colored">Welcome to Core News,</h3> <br>
+        <p id="aboutp"> 
+             your ultimate destination for authentic, unbiased, and essential news. 
+            <br> In an era where misinformation and sensationalism often dominate the media landscape, Core News 
+            stands as a beacon of truth and integrity. 
+            <br> Our mission is simple: to deliver real news that matters, without the fakes, the fluff, or the lies.
+            <br>
+        </p>
+            <h3 id="colored">Our Commitment to Truth</h3> 
+            <br>
+            <p id="aboutp">
+            At Core News, we believe that an informed public is the cornerstone of a healthy democracy. 
+            <br> We are committed to providing our readers with accurate, verified, and relevant news stories. 
+            <br> Our team of dedicated journalists and editors work tirelessly to ensure that every piece of 
+            news we publish is thoroughly fact-checked and free from any form of bias or manipulation.
+            <br>
+            </p>
+            <h3 id="colored">No Sensationalism, Just Facts</h3> 
+            <p id="aboutp">
+            We understand the importance of presenting news in a straightforward and honest manner. 
+            <br> Core News does not engage in sensationalism or clickbait tactics. 
+            <br> Instead, we focus on delivering news that is impactful and pertinent to your life.
+            <br> Whether it's political developments, economic updates, social issues, or global 
+            events, you can trust Core News to provide you with the information you need to stay informed and 
+            make informed decisions.
+            <br>
+            </p>
+            <h3 id="colored"> Importance of Real News </h3> 
+            <p id="aboutp">
+            In a world where misinformation can spread like wildfire, Core News is dedicated to 
+            being a reliable source of truth.
+            <br> We recognize the responsibility that comes with reporting the news, and we take it seriously.
+            <br> Our readers deserve to know what's really happening in the world around them, 
+            without the distortion and noise that often accompany modern news coverage.
+            <br>
+            </p>
+            <h3 id="colored">Why Core News?</h3> 
+            <p id="aboutp">
+            Transparency: We are open about our sources and methodologies, providing clarity on how 
+            we gather and report our news.
+            <br>
+            Integrity: Our commitment to ethical journalism is unwavering. We adhere to the highest 
+            standards of reporting and editorial practices.
+            <br>
+            Relevance: We focus on news that impacts you, your community, and the world at large, 
+            ensuring that you are always up-to-date with the most important stories.
+            <br>
+            </p>
+            <h3 id="colored">Join Us in the Pursuit of Truth</h3>
+            <p id="aboutp">
+            Core News invites you to be a part of our mission to bring real news to the forefront. 
+            <br> By choosing Core News, you are supporting a platform that values truth, accuracy, and
+             integrity above all else.
+            <br> Stay informed, stay engaged, and stay connected with Core News—where real news matters.
+        <br>
+    </p>
+    </div>
+    <script>
+        document.getElementById("homebtn").onclick = function() {
+            window.location.href = "https://skoupidiv2.github.io/corenews/";
+        }
+        document.getElementById("signupbtn").onclick = function() {
+            window.location.href = "https://skoupidiv2.github.io/pagesignup/";
+        }
+        document.getElementById("loginbtn").onclick = function() {
+            window.location.href = "https://skoupidiv2.github.io/pagetesting/";
+        }
+    </script>
+</body>
+</html>
