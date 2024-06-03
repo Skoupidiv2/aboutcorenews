@@ -65,6 +65,7 @@
             background-color: transparent;
             border: none;
             transition: 0.2s;
+            color: rgb(247, 119, 0);
         }
         #introduction {
             display: flex;
@@ -134,7 +135,43 @@
             display: none;
         }
         }
-        
+        @media (prefers-color-scheme: light) {
+            body {
+                background-color: rgb(212, 212, 212);
+                color: black;
+            }
+            #headingDiv {
+                background-color: #aaaaaa;
+            }
+            #homebtn, #aboutbtn, #signupbtn, #loginbtn {
+                color: white;
+                background-color: transparent;
+            }
+            #homebtn:hover, #aboutbtn:hover, #signupbtn:hover, #loginbtn:hover {
+                background-color: rgb(190, 190, 190);
+            }
+            #title {
+                color: black;
+            }
+            #colored {
+                color: black;
+            }
+            ::-webkit-scrollbar-track {
+                background-color: rgb(212, 212, 212);
+            }
+            ::-webkit-scrollbar-thumb {
+                background: rgb(190, 190, 190);
+            }
+            ::-webkit-scrollbar-corner {
+                background-color: rgb(212, 212, 212);
+            }
+            #aboutp{
+                color: #2c2c2c;
+            }
+            #colored{
+                color: black;
+            }
+        }
     </style>
 </head>
 <body>
